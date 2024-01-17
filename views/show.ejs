@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%= _p.name %></h1>
+    <ul>
+        <li><%= _p.name %></li>
+    </ul>
+    <form action="/p/<%= _p._id %>?_method=DELETE" method="post">
+        <button>DELETE</button>
+    </form>
+    <a href="/p/<%= _p._id %>/edit">EDIT</a>
+    <a href="/p">HOME</a>
+</body>
+</html>
